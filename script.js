@@ -30,7 +30,7 @@ Array.from(tiles).forEach(el => {
 		}
 	})	
 	el.addEventListener('click', function(){ 
-		if(!gameOver){
+		if(!gameOver && board[parseInt(coordinates[0])-1][parseInt(coordinates[1])-1] == ""){
 			makeMove(coordinates) 
 			// console.log(coordinates)
 		}	
